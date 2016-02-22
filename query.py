@@ -26,7 +26,7 @@ class InfluxCheck:
         self.servers = []
         self.measurements = []
         try:
-            self.client = InfluxDBClient('localhost', 8086, self.influxdb_login, self.influxdb_password, self.influxdb_db, ssl)
+            self.client = InfluxDBClient(self.influxdb_server, 8086, self.influxdb_login, self.influxdb_password, self.influxdb_db, ssl)
         except Exception as e:
             print "Could not connect to influxdb: %s" % (e)
             exit -1
