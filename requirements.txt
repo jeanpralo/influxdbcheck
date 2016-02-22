@@ -1,0 +1,4 @@
+influxdb==2.12.0
+termcolor==1.1.0
+pytz==2015.7
+python-dateutil
